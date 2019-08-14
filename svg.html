@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tag svg direto no browser</title>
+    
+    <!--usado para arquivos vetoriais para web-->
+    <style>
+        svg{
+            background-color: #ccc;
+        }
+        svg rect{
+            fill: red;
+            stroke-width: 3px;
+            stroke: black;
+        }
+    </style>
+
+    
+</head>
+<body>
+    
+    <!-- -->
+    <svg width="300" height="140">
+        <!-- atributos do retangulo X e Y são margens em relação ao SVG acima -->
+        <rect width="280" height="10" x="10" y="10"></rect>
+        
+        <!--um segundo retangulo com atributos de arredondar cantos RX -->
+        <rect width="280" height="100" x="10" y="30" rx="10"></rect>
+    </svg>
+    
+</body>
+</html>

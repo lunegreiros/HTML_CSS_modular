@@ -1,0 +1,1 @@
+alert("Clique OK para fechar essa janela");

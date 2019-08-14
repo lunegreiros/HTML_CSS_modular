@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tag menu e menu itens</title>
+    
+    <!--usado para modificar o menu do btn DIREITO
+    porém só funciona com o FIREFOX-->
+    
+    <style>
+        div {
+            width: 350px;
+            height: 75px;
+            background-color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <!--criar uma área "div" genérica que recebe o "menu" pelo atributo "contextmenu" -->
+    <div class="div" contextmenu="arquivo">
+    </div>
+    
+    <menu type="context" id="arquivo">
+        <menuitem>Enviar agora</menuitem>
+        <menu label="Outras opções...">
+            <menuitem icon="icon/email.png">por email</menuitem>
+            <menuitem icon="icon/correios.png">por correio</menuitem>
+        </menu>
+    </menu>
+    
+</body>
+</html>
