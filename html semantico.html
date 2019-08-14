@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Estrutura Semântico no html5</title>
+    
+    <style>
+        header, aside, footer{
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 5px;
+        }
+        article {
+            background-color: #ccc;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+  
+    <!--//cabeçalho-->
+    <header>
+        <hgroup>
+            <h1>Titulo do site</h1>
+            <h2>subtitulo do site</h2>
+        </hgroup>
+        
+        <!-- NAV dentro do header // bloco de links-->
+        <nav>
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--//conteudo-->
+    <main>
+        
+        <!--// exemplo de artigo-->
+        <article>
+            <header>
+                <h2>titulo do artigo</h2>
+                <p>subtitulo do artigo</p>
+            </header>
+            <figure>
+                <img src="img/casa.jpg" alt="palavra alternativa" width="350">
+            </figure>
+            <!--aside pode ser usado TAMBÉM para extender o conteudo q nesse caso eh o article-->
+            <aside>
+                <p>descrição do article que ele está inserido</p>
+            </aside>
+            <footer>
+                <p>uma assinatura do article</p>
+                <time datetime="2019-08-14 14:27">14 de Agosto de 2019 às 14:27</time>
+            </footer>
+        </article>
+        
+        <!--// exemplo de artigo 2-->
+        <article>
+            <header>
+                <h2>titulo do artigo</h2>
+                <p>subtitulo do artigo</p>
+            </header>
+            <figure>
+                <img src="img/casa.jpg" alt="palavra alternativa" width="350">
+            </figure>
+            <!--aside pode ser usado TAMBÉM para extender o conteudo q nesse caso eh o article-->
+            <aside>
+                <p>descrição do article que ele está inserido</p>
+            </aside>
+            <footer>
+                <p>uma assinatura do article</p>
+                <time datetime="2019-08-14 14:27">14 de Agosto de 2019 às 14:27</time>
+            </footer>
+        </article>
+        
+    </main>
+    
+    <!--// SIDEBAR do conteudo total da pagina relacionado com o main-->
+    <aside>
+        <section>
+            <h2>seção do artigos relacionados</h2>
+            <p>conteudo da section 01</p>
+        </section>
+        <section>
+            <h2>Novidades</h2>
+            <p>conteudo da section 02</p>
+        </section>
+        <section>
+            <h2>Propagandas</h2>
+            <p>conteudo da section 03</p>
+        </section>
+    </aside>
+    
+    
+    <!--// FOOTER da pagina relacionado com o main-->
+    <footer>
+        <nav>
+            <h3>titulo de rodapé</h3>
+            <ul>
+                <li><a href="#">primeiro item</a></li>
+                <li><a href="#">segundo item</a></li>
+                <li><a href="#">terceiro item</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <address>
+        <p>as últimas informações da página!</p>
+    </address>
+</body>
+</html>
